@@ -1,0 +1,70 @@
+<!--search.wxml-->
+<view>
+  <view class="section">
+    <input bindinput="bindKeyInput" placeholder='电影/电视剧/影人' bindfocus="navigateToSearchDetails"  />
+  </view>
+
+  <view class="nav">
+    <view class="{{movie_class}}" style="width:50%" bindtap="movie">电影</view>
+    <view class="{{tv_class}}" style="width:50%" bindtap="tv">电视</view>
+  </view>
+
+  <view class="space_bar"></view>
+
+  <view wx:if="{{movie_show}}" class="main-windows">
+    <view style="padding:0px 5px 10px 10px;font-size:14px;">
+      <text>精选榜单</text>
+    </view>
+    <scroll-view scroll-x="true">
+      <view class="selection">
+        <view class="selection-item" bindtap="navigateToSearchResults" id="top250">
+          <view class="category">
+            <view class="category_title">
+              豆瓣Top250
+            </view>
+            <text class="category_introduce">8分以上好电影</text>
+          </view>
+        </view>
+        <view class="selection-item" bindtap="navigateToSearchResults" id="weekly">
+          <view class="category">
+            <view class="category_title">
+              口碑榜
+            </view>
+            <text class="category_introduce">6月13日-6月20日</text>
+          </view>
+        </view>
+        <view class="selection-item" bindtap="navigateToSearchResults" id="new_movies">
+          <view class="category">
+            <view class="category_title">
+              新片榜
+            </view>
+            <text class="category_introduce">6月13日-6月20日</text>
+          </view>
+        </view>
+        <view class="selection-item" bindtap="navigateToSearchResults" id="us_box">
+          <view class="category">
+            <view class="category_title">
+              北美票房榜
+            </view>
+            <text class="category_introduce">票房最高排名</text>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+
+<view wx:if="{{tv_show}}" class="main-windows">
+  <view style="padding:0px 5px 10px 10px;font-size:14px;">
+    <text>精选榜单</text>
+  </view>
+  <view style="width:100%;margin: 0 5px;">
+    <view class="tv-item">
+      <view class="category">
+        <view class="category_title">
+          电视剧
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

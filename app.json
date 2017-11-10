@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search_results/search_results",
+    "pages/search/search",
+    "pages/search_details/search_details",
+    "pages/user/user",
+    "pages/details/details",
+    "pages/video/video",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "color": "#fff",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#888",
+    "selectedColor": "#09bb07",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "热映"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "找片"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的"
+      }
+    ]
+  }
+}

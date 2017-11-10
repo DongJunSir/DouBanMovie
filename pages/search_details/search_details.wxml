@@ -1,0 +1,16 @@
+<!--search_details.wxml-->
+<view class="cotainer">
+  <view class="section">
+    <icon type="search" size="10" color="black" />
+    <input focus="true" bindblur="setInputValue" />
+    <text class="cancel" bindtap="searchInputValue">搜索</text>
+  </view>
+
+  <view class="title">热门搜索</view>
+
+  <view class="search_hot">
+    <view wx:for="{{search_hot}}" wx:key="this">
+      <view class="hot_item" bindtap="searchhotval" id="{{index}}">{{item}}</view>
+    </view>
+  </view>
+</view>

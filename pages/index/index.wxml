@@ -1,0 +1,38 @@
+<view class="content">
+
+  <view class="section">
+    <text class="icon">豆瓣</text>
+    <input placeholder="电影/电视剧/影人" focus="{{focus}}" />
+  </view>
+
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="this">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="nav">
+    <view class="{{showing_class}}" style="width:50%;" bindtap="movieIntheaters">正在上映</view>
+    <view class="{{comming_class}}" style="width:50%;" bindtap="movieComingSoon">即将上映</view>
+  </view>
+
+  <block wx:for="{{movie}}" wx:key="this">
+    <view class="movie">
+      <view class="pic">
+        <image src="{{item.images.medium}}" mode="aspectFill" id="{{item.id}}" bindtap="navigateToDetails"></image>
+      </view>
+      <view class="movie-info">
+        <view class="base-info">
+          <text>
+          <text class="movie_title">{{item.title}}</text>\n评分:{{item.rating.average}}\n导演:{{item.directors[0].name}}\n主演:<text wx:for="{{item.casts}}" wx:for-item="casts" wx:key="this">{{casts.name}} </text>\n{{item.collect_count}}人看过
+          </text>
+        </view>
+      </view>
+    </view>
+  </block>
+
+
+
+</view>

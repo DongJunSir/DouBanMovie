@@ -1,0 +1,21 @@
+<!--user.wxml-->
+<view class="movie_photo">
+  <view class="user_back">
+    <view class="user_image" bindtap="selectIcon">
+      <image src="{{image_src}}"></image>
+    </view>
+    <view class="username">username</view>
+  </view>
+</view>
+<view class="user_want">
+  <text>想看(0)</text>
+  <view class="want_detail">
+    该用户暂无想看的电影
+  </view>
+</view>
+<view class="user_seen">
+  <text>看过(0)</text>
+  <view class="seen_detail">
+      该用户暂无看过的电影
+  </view>
+</view>

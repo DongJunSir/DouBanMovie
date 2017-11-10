@@ -1,0 +1,35 @@
+.videoContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;
+  justify-content: space-between;*/
+  /*padding: 20rpx;*/
+  box-sizing: border-box;
+} 
+.section video{
+  width:100%;
+}
+.btn-area{
+  width:100%;
+  height: 40px;
+  padding:5px 10px;
+  margin-top:5px;
+  box-sizing: border-box;
+}
+.btn-area input{
+  width:70%;
+  height:20px;
+  border:1px solid #ccc;
+  background-color: #fff;
+  font-size: 14px;
+  float: left;
+  border-radius: 10px;
+  padding-left:10px;
+}
+.btn-area button{
+  float: left;
+  width:20%;
+  font-size:12px;
+  margin-left:10px;
+}

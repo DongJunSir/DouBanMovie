@@ -1,0 +1,113 @@
+/* search_details.wxss */
+/*顶部input框*/
+.cotainer{
+  max-height:100%;
+  background-color:#EFEFEF;
+}
+.section{
+  height:25px;
+  position:relative;
+  padding:5px 10px;
+  background-color: #48C23D;
+  box-sizing: content-box;
+  vertical-align: middle;
+}
+.section icon{
+  top:13px;
+  margin-left:5px;
+  position: absolute;
+  z-index: 2;
+}
+.section input{
+  width:84%;
+  height:20px;
+  border-radius: 5px;
+  font-size: 14px;
+  padding-left:20px;
+  background-color: #fff;
+  position: absolute;
+  box-sizing: border-box;
+}
+.cancel{
+  color:#fff;
+  position:absolute;
+  right:10px;
+  font-size:16px;
+  margin-top:2px;
+}
+
+.title{
+    height:20px;
+    color:#888;
+    font-size:12px;
+    line-height:20px;
+    padding:5px 10px;
+}
+.hot_item{
+    height:20px;
+    color:black;
+    font-size:12px;
+    line-height:20px;
+    padding:5px 10px;
+    border-bottom:1px solid #EFEFEF;
+    background-color: #fff;
+}
+
+/*电影内容*/
+.movie{
+  margin:10px;
+  background-color: #fff;
+}
+.header{
+  width:100%;
+  height:30px;
+}
+.header .left{
+  border-bottom:1px solid #C3C3C3;
+  height: 15px;
+  width:25%;
+  margin-left:20%;
+  float:left;
+}
+
+.header .right{
+  border-bottom:1px solid #C3C3C3;
+  height: 15px;
+  width:25%;
+  float:right;
+  margin-right:20%;
+}
+.header .num{
+  float: left;
+  line-height:30px;
+  width:10%;
+  text-align: center;
+  font-style: italic;
+}
+
+.movie_content{
+  padding-top:5px;
+  padding-bottom:5px;
+  display:flex;
+  border:1px solid #C0C0BF;
+  border-radius: 5px;
+}
+.pic image{
+  width:100px;
+  height:150px;
+  vertical-align: top;
+  margin-left:5px;
+}
+.movie-info{
+  padding-left:20px;
+  padding-top:15px;
+}
+.base-info{
+  color:#000;
+  line-height:20px;
+  font-size:12px;
+}
+.movie_title{
+  font-size:14px;
+  font-weight: bold;
+}

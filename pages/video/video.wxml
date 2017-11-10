@@ -1,0 +1,12 @@
+<!--video.wxml-->
+<!--video.wxml-->
+<view class="videoContent">
+  <view class="section tc">
+    <video id="myVideo" src="{{src}}"
+      danmu-list="{{danmuList}}" enable-danmu="true" danmu-btn="true" controls poster="{{cover}}"></video>
+    <view class="btn-area">
+      <input bindblur="bindInputBlur" />
+      <button bindtap="bindSendDanmu">发弹幕</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,80 @@
+
+/*back返回*/
+.nav_back_bar{
+  height:40px;
+  border-bottom:1px solid #ccc;
+}
+.back_btn{
+  color:green;
+  font-weight: bold;
+  font-size:25px;
+  width:40px;
+  height:40px;
+  text-align: center;
+  line-height:40px;
+  float: left;
+}
+.category_title{
+  line-height: 40px;
+  margin-left:10px;
+  float: left;
+  font-size:16px;
+}
+
+/*电影内容*/
+.movie{
+  margin:10px;
+}
+.header{
+  width:100%;
+  height:30px;
+}
+.header .left{
+  border-bottom:1px solid #C3C3C3;
+  height: 15px;
+  width:25%;
+  margin-left:20%;
+  float:left;
+}
+
+.header .right{
+  border-bottom:1px solid #C3C3C3;
+  height: 15px;
+  width:25%;
+  float:right;
+  margin-right:20%;
+}
+.header .num{
+  float: left;
+  line-height:30px;
+  width:10%;
+  text-align: center;
+  font-style: italic;
+}
+
+.movie_content{
+  padding-top:5px;
+  padding-bottom:5px;
+  display:flex;
+  border:1px solid #C0C0BF;
+  border-radius: 5px;
+}
+.pic image{
+  width:100px;
+  height:150px;
+  vertical-align: top;
+  margin-left:5px;
+}
+.movie-info{
+  padding-left:20px;
+  padding-top:15px;
+}
+.base-info{
+  color:#000;
+  line-height:20px;
+  font-size:12px;
+}
+.movie_title{
+  font-size:14px;
+  font-weight: bold;
+}

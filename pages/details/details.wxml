@@ -1,0 +1,54 @@
+<!--detail.wxml-->
+<view class="movie_photo">
+  <view class="movie_photo_back">
+    <view class="movie_photo_image">
+      <image src="{{details.images.large}}"></image>
+    </view>
+  </view>
+</view>
+<view class="movie_introduce">
+  <view class="left_panel">
+    <view class="movie_title">{{details.title}}</view>
+    <view class="movie_others">
+      <text>{{details.year}}/</text>
+      <text wx:for="{{details.genres}}" wx:key="this">{{item}}/</text>
+      <view wx:if="{{details.original_title}}">
+        原名:{{details.original_title}}
+      </view>
+
+      <view>{{details.wish_count}}想看</view>
+      <view>{{details.collect_count}}看过</view>
+    </view>
+  </view>
+  <view class="right_panel">
+    <view>豆瓣评分</view>
+    <view>{{details.rating.average}}</view>
+    <view>{{details.ratings_count}}人</view>
+  </view>
+</view>
+<view class="movie_btn">
+  <button style="margin-right:0px;">看过</button>
+  <button>想看</button>
+</view>
+<view class="video_play" bindtap="navigateToVideo">
+  <text>观看本片</text>
+  <text style="float:right;font-size:18px;">></text>
+</view>
+<view class="movie_review">
+  <view class="review_title">简介</view>
+  <view>
+    {{details.summary}}
+  </view>
+</view>
+
+<view class="main-windows">
+  <view class="review_title">影人</view>
+  <scroll-view scroll-x="true">
+    <view class="selection">
+      <view class="selection-item" wx:for="{{details.casts}}" wx:key="this">
+        <image src="{{item.avatars.small}}"></image>
+        <view>{{item.name}}</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
